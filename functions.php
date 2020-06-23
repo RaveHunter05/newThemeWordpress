@@ -21,6 +21,19 @@ function newTheme_styles(){
 
 add_action('wp_enqueue_scripts', 'newTheme_styles');
 
+
+// Adding new menus
+
+function newTheme_menus(){
+    register_nav_menus(
+        array(
+            'main_menu' => __('Main menu', 'newTheme'),
+            'secondary_menu' => __('Secondary menu', 'newTheme')
+        ));
+}
+
+add_action('init', 'nitidoscr_menus');
+
 // Adding fontAwesome icons
 
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
