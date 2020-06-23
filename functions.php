@@ -32,7 +32,7 @@ function newTheme_menus(){
         ));
 }
 
-add_action('init', 'nitidoscr_menus');
+add_action('init', 'newTheme_menus');
 
 // Adding fontAwesome icons
 
