@@ -1,6 +1,6 @@
 <?php 
 
-function nitidoscr_setup(){
+function newTheme_setup(){
 
     // This is for adding customized image sizes
 
@@ -8,7 +8,7 @@ function nitidoscr_setup(){
     add_image_size('regular', 231, 100, true);
 }
 
-add_action('after_setup_theme', 'nitidoscr_setup');
+add_action('after_setup_theme', 'newTheme_setup');
 
 // Adding styles and scripts
 
